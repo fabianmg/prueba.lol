@@ -1,4 +1,15 @@
-tome
-para unir
-ñkkkk
-estoy en ramita
+﻿void loop() {
+  sensorValue = analogRead(analogInPin);            
+    if(sensorValue > 230){
+      digitalWrite(outPin, HIGH);
+      delay(300);                     
+    } 
+    else
+      digitalWrite(outPin, LOW);
+   
+    Serial.print("sensor = " );                       
+    Serial.println(sensorValue);     
+   
+    delay(100);                     
+  
+}
