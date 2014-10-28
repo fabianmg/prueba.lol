@@ -1,2 +1,16 @@
-tome
-ñkkkk
+void loop() {
+  sensorValue = analogRead(analogInPin);            
+  digitalWrite(outPin, 1);
+    if(sensorValue > 230){
+      digitalWrite(outPin, HIGH);
+      delay(300);                     
+    } 
+    else
+      digitalWrite(outPin, LOW);
+   
+    Serial.print("sensor = " );                       
+    Serial.println(sensorValue);     
+   
+    delay(10250);                     
+  
+}
