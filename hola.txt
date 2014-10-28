@@ -1,15 +1,27 @@
+<<<<<<< HEAD
 ﻿void loop() {
   sensorValue = analogRead(analogInPin);            
+=======
+void loop() {
+  sensorValue = analogRead(analogInPin);            
+  digitalWrite(outPin, 1);
+>>>>>>> 36f03cc608b76b1b9814f1d78e850ae433268fc3
     if(sensorValue > 230){
       digitalWrite(outPin, HIGH);
       delay(300);                     
     } 
     else
       digitalWrite(outPin, LOW);
-   
+   nuevo
     Serial.print("sensor = " );                       
     Serial.println(sensorValue);     
    
+<<<<<<< HEAD
     delay(100);                     
   
 }
+=======
+    delay(10250);                     
+  
+}
+>>>>>>> 36f03cc608b76b1b9814f1d78e850ae433268fc3
